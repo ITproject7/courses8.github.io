@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main1.css">
+    <title>Billing and Payment</title>
+    <link rel="icon" href="imgs/icon.jpg" type="img/x-icon">
+    <link rel="icon" type="image/x-icon" href="imgs/icon1.png">
+    <link rel="icon" href="logo-site.png" type="img/x-icon">
+
+</head>
+<style>
+    
+    .paybody{
+    margin: 0;
+    padding: 0;
+    background-image: url("/imgs/back.jpg");
+    background-size: cover;
+    
+    
+  } 
+  .container {
+    display: block; 
+    width: 700px; 
+    margin: 20px auto; 
+    padding: 25px; 
+    background-color: linear-gradient(90deg, #4e8392 60%, #07042eab 40.1%);
+    box-shadow: 0 5px 10px rgba(15, 98, 150, 0.1);
+  }
+  
+  .title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .inputBox {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .inputBox span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .inputBox input {
+    width: calc(100% - 40px); 
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .inputBox input:focus {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .inputBox input::placeholder {
+    color: #ccc;
+  }
+  
+  .btn-box, .payment-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #006ca5;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 5px;
+  }
+  
+  .btn:hover {
+    background-color: rgb(18, 16, 93);
+  }
+  
+  .payment-form {
+    display: none; 
+    width: 700px; 
+    margin: 20px auto; 
+    padding: 25px; 
+    background: #006ca5; 
+    box-shadow: 0 5px 10px rgba(15, 98, 150, 0.1); 
+  }
+  
+  .billing-container {
+    background-color: #006ca5; 
+    box-shadow: 0 5px 10px rgba(15, 98, 150, 0.1); 
+  }
+
+</style>
+<body>
+    <div class="paybody">
+        <div>
+            <nav class="navbar">
+                <img src="imgs/logo.png" alt="" class="logo">
+                <ul class="lists">
+                    <li><a href="./index.html" class="list">Home</a></li>
+                    <li><a href="./course.html" class="list">All Courses</a></li>
+                    <li><a href="./about.html" class="list">About</a></li>
+                    <li><a href="./profs.html" class="list">Team</a></li>
+                    <li><a href="./pricing.html" class="list">Pricing</a></li>
+                    <li><a href="./cont.html" class="list">Contact Us</a></li>
+                    <li><a href="./register.html" class="list">Registered</a></li>
+            
+                    <li><a href="./assig.html" class="list">Assignments</a></li>
+                    
+                    <li><a href="./activities.htm" class="list">Activites</a></li>
+                    
+                    <li><a href="./rank.htm" class="list">Ranks</a></li>
+                  
+                    <li><a href="./shop.html" class="list"><img src="imgs/grocery-store.png" alt="" class="carticon" title="shopping cart"></a></li>
+                    <li><a href="./certificate.html" class="list2"><button class="listbutton">Get Certificate</button></a></li>
+                    
+                    <li><button id="button" ><img src="imgs/dark-modeicon.png"  class="darkmode"></button></li>
+                </ul>
+                    
+                
+                
+            </nav>
+        </div>
+ 
+
+
+
+
+        <div class="container billing-container">
+            <form action="" method="post">
+                <h3 class="title">Billing Address</h3>
+                <div class="inputBox">
+                    <span>Full name:</span>
+                    <input type="text" placeholder="Enter your full name">
+                </div>
+                <div class="inputBox">
+                    <span>Email:</span>
+                    <input type="email" placeholder="example@example.com">
+                </div>
+                <div class="inputBox">
+                    <span>City:</span>
+                    <input type="text" placeholder="City">
+                </div>
+                <div class="inputBox">
+                    <span>Zip code:</span>
+                    <input type="text" placeholder="123456">
+                </div>
+            </form>
+        </div>
+        <div class="container payment-options">
+            <button class="btn payment-option" data-payment-method="credit-card">Credit Card</button>
+            <button class="btn payment-option" data-payment-method="paypal">PayPal</button>
+            <button class="btn payment-option" data-payment-method="mobile-wallet">Mobile Wallet</button>
+        </div>
+        <div class="container payment-form credit-card" style="display: none;">
+            <form action="" method="post">
+                <h3 class="title">Credit Card Payment</h3>
+                <div class="inputBox">
+                    <span>Name on Card:</span>
+                    <input type="text" placeholder="Name on card">
+                </div>
+                <div class="inputBox">
+                    <span>Credit Card Number:</span>
+                    <input type="text" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>Exp Month:</span>
+                    <input type="text" placeholder="Month">
+                </div>
+                <div class="btn-box">
+                    <a href="./shop.html" class="btn">Proceed to Checkout</a>
+                </div>
+            </form>
+        </div>
+        <div class="container payment-form paypal" style="display: none;">
+            <form action="" method="post">
+                <h3 class="title">PayPal Payment</h3>
+                <div class="inputBox">
+                    <span>Account Name:</span>
+                    <input type="text" placeholder="Account Name">
+                </div>
+                <div class="inputBox">
+                    <span>PayPal Email:</span>
+                    <input type="email" placeholder="paypal@mail.com">
+                </div>
+                <div class="btn-box">
+                    <a href="./shop.html" class="btn">Proceed to Checkout</a>
+                </div>
+            </form>
+        </div>
+        <div class="container payment-form mobile-wallet" style="display: none;">
+            <form action="" method="post">
+                <h3 class="title">Mobile Wallet Payment</h3>
+                <div class="inputBox">
+                    <span>Name:</span>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="inputBox">
+                    <span>Phone Number:</span>
+                    <input type="text" placeholder="Phone Number">
+                </div>
+                <div class="btn-box">
+                    <a href="./shop.html" class="btn">Proceed to Checkout</a>
+                </div>
+            </form>
+        </div>
+         
+
+    
+
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    
+        <div class="footer">
+            <footer>
+                <div class="upperfooter">
+                    <div class="footer-content">
+                        <h3>BYTE-LEARN</h3>
+                        <p>The automated process starts as soon as your clothes go into the machine</p>
+                        
+                        <ul>
+                              <li><a href="#explore">Explore</a></li>
+                              <li><a href="#about-us">About Us</a></li>
+                              <li><a href="#services">Services</a></li>
+                              <li><a href="#courses">Courses</a></li>
+                              <li><a href="#blog">Blog</a></li>
+                              <li><a href="#contact-us">Contact Us</a></li>
+                        </ul>
+                        <ul>
+                              <li><a href="#quick-links">Quick Links</a></li>
+                              <li><a href="#contact-us">Contact Us</a></li>
+                              <li><a href="#pricing">Pricing</a></li>
+                              <li><a href="#terms-and-conditions">Terms & Conditions</a></li>
+                              <li><a href="#privacy">Privacy</a></li>
+                              <li><a href="#feedbacks">Feedbacks</a></li>
+                        </ul>
+                        
+                        
+                      
+                    </div>
+                    
+                    <div class="footer-contact">
+                        <h3>Have a question?</h3>
+                        <p>Call us on <a href="#">+099999999</a></p>
+                        <p>Send us on Email: <a href="mailto:itprojectteam7@gmail.com" >itprojectteam7@gmail.com</a></p>
+                        <div class="icons">
+                          <a href="#"><img src="imgs/fbicon.jpeg" alt=""></a>
+                          <a href="#"><img src="imgs/igicon.jpeg" alt=""></a>
+                          <a href="#"><img src="imgs/linkdnicon.jpeg" alt=""></a>
+                          <a href="#"><img src="imgs/twittericon.jpeg" alt=""></a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <hr>
+                <p class="copyright">Copyright &#169; 2024 All rights reserved | This website is made by BYTE-LEARN</p>
+            </footer>
+        </div>
+    </div>
+    <script >
+        document.querySelectorAll('.payment-option').forEach(option => {
+  option.addEventListener('click', () => {
+    const paymentMethod = option.dataset.paymentMethod;
+    document.querySelectorAll('.payment-form').forEach(form => {
+      form.style.display = form.classList.contains(paymentMethod) ? 'block' : 'none';
+    });
+  });
+});
+    </script>
+    
+</body>
+</html>

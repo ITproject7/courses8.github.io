@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html class="html1">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Activities</title>
+        
+    <link rel="icon" type="image/x-icon" href="imgs/icon1.png">
+    
+    <link rel="icon" href="imgs/icon.jpg" type="img/x-icon">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <style>
+
+        p{
+            font: 1em sans-serif;
+            font-weight: bolder;
+            padding: 10px;
+        }
+        div.act1{
+            display: flex;
+        }
+        div.act{
+            background-color: rgb(178, 228, 245);
+            
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 1px 1px 3px 3px #e7ecee;
+            border: 2px solid #fefefe;
+            display: block;
+            padding: 20px;
+            margin: 20px;
+        }
+        div.act:hover{
+            box-shadow: 2px 2px 3px 3px #aec5ce;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        body.act{
+            background-color: rgb(206, 241, 241);
+           
+        }
+        h1{
+            background:linear-gradient( 45deg, #e8f3ed,#c5c6e0) ;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+        }
+        h2{
+            padding:10px;
+            background: linear-gradient(48deg, #fefefe,#c5c6e0,#88898f) ;
+            border: 2px solid #fefefe;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            text-align: center;
+
+        }
+        .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    
+    
+
+}
+.logo{
+    width: 10rem;
+    height: 8rem;
+    border-radius: 250px;
+    
+   
+}
+
+.lists4{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    margin-top: 29px;
+    list-style: none;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.4);
+    
+    
+    
+    
+
+}
+
+.list5{
+   
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.list:hover{
+    color: rgb(18 16 93);
+    text-decoration:underline;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    
+    
+
+}
+.logo{
+    width: 10rem;
+    height: 8rem;
+    border-radius: 250px;
+    transition: 0.4s;
+    
+   
+}
+.logo:hover{
+    transform: scale(0.9,0.9);
+}
+
+.lists{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    margin-top: 29px;
+    list-style: none;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.4);
+    
+    
+    
+    
+
+}
+
+.list{
+   
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.list:hover{
+    color: rgb(18 16 93);
+    text-decoration:underline;
+    
+}
+
+
+.darkmode{
+    width: 35px;
+    height: 35px;
+    
+    
+} 
+#button{
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    margin-top: -3px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#button:hover{
+    transform: scale(0.9,0.9);
+}
+/* .search{
+    height: 2rem;
+    width: 12rem;
+    margin-left: -120px;
+    margin-top: 45px;
+    border-radius: 10px;
+    padding-left: 5px;
+    border-color:#006ca5;
+    background-color: whitesmoke;
+    
+}
+.sub{
+    width: 21px;
+    height: 21px;
+    
+    
+} */
+
+.darkmode{
+    width: 35px;
+    height: 35px;
+    
+} 
+#button3{
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    margin-top: -3px;
+    cursor: pointer;
+}
+div.header6{
+    animation: moveDown 0.5s ease-in-out forwards;
+    padding: 80px;
+    padding-right: 80px;
+    padding-top: 2px;
+    padding-bottom: 250px;
+    
+    
+}
+@keyframes moveDown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100px); }
+} 
+
+
+.head1{
+    color:  #006ca5;
+    font-style: italic;
+    font-weight: bold;
+    
+    
+    
+}
+.head2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:whitesmoke;
+    width: 631px;
+    
+}
+.quote{
+    font-size: 18px;
+    font-weight: 800;
+    font-style: italic;
+    color: #006ca5;
+    
+   
+}
+.bu{
+    height: 39px;
+    width: 167px;
+    margin-top: 40px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color:#006ca5 ;
+    border:none;
+    font-size: 16px;
+    
+    color: azure;
+    font-weight: 700;
+    
+    
+}
+.bu:hover{
+   background-color:grey;
+   cursor: pointer;
+   
+   
+}
+/* .gs{
+    font-size: 16px;
+    text-decoration: none;
+    color: azure;
+    font-weight: 700;
+
+} */
+.bu2{
+    height: 39px;
+    width: 167px;
+    margin-top: 40px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    border: none;
+    margin-left: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    color:#006ca5;
+    font-weight: 700;
+
+}
+.bu2:hover{
+    background-color: grey;
+    cursor:pointer;
+    
+}
+
+.carticon{
+    width: 25px;
+    height: 25px;
+}
+ /* .list2{
+    
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 12px; 
+
+} */
+.listbutton{
+    height: 30px;
+    width: 130px;   
+    margin-left: 10px;
+    background-color: #006ca5;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+
+}
+.listbutton:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+.footer-content ul{
+    display: flex;
+    justify-content: space-around ;
+    list-style: none;
+    margin-top: 30px;
+    
+}
+.footer-content ul li{
+    margin-left: 40px;
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+.footer-content a:hover{
+    color:rgb(18 16 93) ;
+    text-decoration: underline;
+
+}
+.footer-content p{
+    width: 300px;
+    margin-left: 80px;
+    color:papayawhip;
+    margin-top: -15px;
+    font-weight: bold;
+}
+.footer-content h3{
+    margin-left: 80px;
+    color: papayawhip;
+    margin-top: -20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background-color: #1c526b;
+    padding: 35px 0;
+    
+}
+.footer-contact{
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+.icons img{
+    width: 25px;
+    height: 25px;
+    
+}
+.icons img:hover{
+    width: 21px;
+    height: 21px;
+}
+.footer-contact h3{
+    color: papayawhip;
+    font-weight: 700;
+    font-size: 21px;
+
+}
+.footer-contact p{
+    color:  papayawhip;
+    font-size: 16px;
+    font-weight: 700;
+}
+.footer-contact a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.footer-contact a:hover{
+    color: black;
+    text-decoration:underline;
+}
+hr{
+    height: 2px;
+    border-color: grey;
+    color: grey;
+    
+}
+.copyright{
+    text-align: center;
+    font-size: 16px;
+    margin-left: 20px;
+    color: whitesmoke;
+    font-weight: 800;
+    
+}
+
+.upperfooter{
+    display: flex;
+    justify-content: space-around;
+}
+
+    </style>
+
+    <body class="act">
+<nav class="navbar">
+      
+    <!-- <form action="">
+        <input type="search" placeholder="search courses" class="search">
+        <button type="submit" class="button"><img src="imgs/searchicon2.png" alt="" class="sub"></button>
+    </form> -->
+    <!-- <button class="button" ><img src="imgs/dark-modeicon.png"  class="darkmode"></button> -->
+   
+        <ul class="lists">
+            <li><a href="./index.html" class="list">Home</a></li>
+            <li><a href="./course.html" class="list">All Courses</a></li>
+            <li><a href="./about.html" class="list">About</a></li>
+            <li><a href="./profs.html" class="list">Team</a></li>
+            <li><a href="./pay.html" class="list">Pricing</a></li>
+            <li><a href="./cont.html" class="list">Contact Us</a></li>
+            <li><a href="./register.html" class="list">Registered</a></li>
+            
+            <li><a href="./assig.html" class="list">Assignments</a></li>
+            
+            <li><a href="./activities.htm" class="list">Activites</a></li>
+            
+            <li><a href="./rank.htm" class="list">Ranks</a></li>
+            <li><a href="./shop.html" class="list"><img src="imgs/grocery-store.png" alt="" class="carticon" title="shopping cart"></a></li>
+            <li><a href="./certificate.html" class="list2"><button class="listbutton">Get Certificate</button></a></li>
+               
+        <li><button id="button" ><img src="imgs/dark-modeicon.png"  class="darkmode"></button></li>
+    </ul>
+
+
+   
+</nav>
+
+    <h1>Welcome to the activites board</h1>
+    
+    <h1>Each student studied desires a happy time..</h1>
+    <div>
+   <div class="act1">
+    <div class="act">
+        <h2> Trips to sea </h2>
+        <img src="imgs/5acb8100facba81d008b4580.webp" width="200px" style="border-radius: 10px;">
+        <p>You can enter this activity if your grade is higher than 80%</p>
+        
+        
+        <button type="button" onclick="change()" class="in4" >submit</button>
+    </div>
+
+
+    <div class="act">
+        <h2> Trips to Nile </h2>
+        
+        <img src="imgs/3-1-1.jpg" width="200px" style="border-radius: 10px;">
+        <p>You can enter this activity if your grade is higher than 70%</p>
+       
+        <button type="button" onclick="change()" class="in4" >submit</button>
+    </div>
+    <div class="act">
+        <h2> Trips to club </h2>
+        
+        <img src="imgs/555.jpeg" width="200px" style="border-radius: 10px;">
+        <p>You can enter this activity if your grade is higher than 60%</p>
+       
+        <button type="button" onclick="change()" class="in4" >submit</button>
+    </div> 
+    <div class="act">
+        <h2> Entering games with our cards </h2>
+        
+        <p>You can enter this activity if your grade is higher than 50%</p>
+        
+        <button type="button" onclick="change()" class="in4" >submit</button>
+    </div>
+    <div class="act">
+        <h2> Getting free novels </h2>
+        <img src="imgs/book-clipart-transparent-25-removebg-preview.png" width="120px" style="align-items: center;">
+        <p>You can enter this activity if your grade is less than 50%</p>
+       
+            <button type="button" onclick="change()" class="in4" >submit</button>
+        
+    </div>
+   </div>
+    <br>
+    <br>
+    <script defer>
+        
+        function change(){
+            
+            
+            prompt('Congratulatins...enter your full name');
+            
+        
+        }
+        
+        
+        
+      </script>
+  
+
+ 
+
+
+
+   
+    
+   
+    
+  
+  <hr>
+  <div class="footer">
+    <footer>
+        <div class="upperfooter">
+            <div class="footer-content">
+                <h3>BYTE-LEARN</h3>
+                <p>The automated process starts as soon as your clothes go into the machine</p>
+                
+                <ul>
+                      <li><a href="#explore">Explore</a></li>
+                      <li><a href="#about-us">About Us</a></li>
+                      <li><a href="#services">Services</a></li>
+                      <li><a href="#courses">Courses</a></li>
+                      <li><a href="#blog">Blog</a></li>
+                      <li><a href="#contact-us">Contact Us</a></li>
+                </ul>
+                <ul>
+                      <li><a href="#quick-links">Quick Links</a></li>
+                      <li><a href="#contact-us">Contact Us</a></li>
+                      <li><a href="#pricing">Pricing</a></li>
+                      <li><a href="#terms-and-conditions">Terms & Conditions</a></li>
+                      <li><a href="#privacy">Privacy</a></li>
+                      <li><a href="#feedbacks">Feedbacks</a></li>
+                </ul>
+                
+                
+              
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Have a question?</h3>
+                <p>Call us on <a href="#">+099999999</a></p>
+                <p>Send us on Email: <a href="mailto:itprojectteam7@gmail.com" >itprojectteam7@gmail.com</a></p>
+                <div class="icons">
+                  <a href="#"><img src="imgs/fbicon.jpeg" alt=""></a>
+                  <a href="#"><img src="imgs/igicon.jpeg" alt=""></a>
+                  <a href="#"><img src="imgs/linkdnicon.jpeg" alt=""></a>
+                  <a href="#"><img src="imgs/twittericon.jpeg" alt=""></a>
+                </div>
+            </div>
+            
+        </div>
+        <hr>
+        <p class="copyright">Copyright &#169; 2024 All rights reserved | This website is made by BYTE-LEARN</p>
+    </footer>
+</div>
+<script src="javascript/home.js"></script>
+
+ </body>
+</html>
+
+

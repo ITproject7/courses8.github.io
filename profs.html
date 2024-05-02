@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+    <meta charset="UTF-8">
+    <title>team </title>
+    <link rel="icon" type="image/x-icon" href="imgs/icon1.png">
+   <link rel="icon" href="imgs/icon.jpg" type="img/x-icon">
+   <link rel="stylesheet" href="main1.css">
+   
+  
+</head>
+<style>
+   .team-body {
+    background: linear-gradient(45deg,rgb(236, 243, 248) ,rgb(224, 229, 244)); 
+    }
+  
+  .team-card-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      margin-top: 100px;
+  }
+  
+  .team-card {
+      height: 530px;
+      width: 300px;
+     background-color:white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+      margin: 20px;
+      margin-right:50px ;
+      margin-left:50px ;
+  }
+  
+  .team-card img {
+      width: 300px;
+      height: 200px;
+  }
+  
+  .team-card-content {
+      padding: 16px;
+  }
+  
+  .team-card-content h3 {
+    text-align: center;
+      font-size: 28px;
+      margin-top: 2px;
+      margin-bottom: 5px;
+      color: rgb(18 16 93);
+      text-shadow: 0 5px 10px silver;
+  
+      
+  }
+  
+  .team-card-content p {
+      color:black;
+      font-size: 15px;
+      line-height: 1.3;
+      display:  inline-block;
+  }
+  
+  
+  .team-btn {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #1c526b;
+      text-decoration: none;
+      border-radius: 4px;
+      color: wheat;
+      font-weight: bold;
+      margin-top :50px;
+    
+  }
+  .team-btn:hover{
+      font-weight: bold;
+      color:  rgb(50, 49, 49);
+  } 
+  .team-read-more-btn{
+  color:rgb(18 16 93);
+  display: inline-block;
+  font-size: larger;
+  cursor: pointer;
+  
+  }
+  .team-read-more-text{
+  display: none;
+  
+  
+  }
+  .team-read-more-text--show{
+  display: inline;
+  
+  
+  }
+  .team-row {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+   flex-wrap: wrap;
+   
+  }
+  
+  .team-cont{
+  padding: 15px 9%;
+  padding-bottom: 50px;
+  }
+  .team-hh{
+  text-align: center;
+  padding-bottom: 15px;
+  color:rgb(18 16 93);
+  text-shadow: 0 5px 10px silver;
+  font-size: 50px;
+   }
+  .team-box-container{
+  display: flex;
+  
+   }
+   .team-box{
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  border-radius: 5px;
+  background: white;
+  text-align: center;
+  padding: 30px 20px;
+  flex: 1;
+  margin-right: 15px;
+  width: 270px;
+  
+   }
+   .team-box img{
+  height: 80px;
+   }
+   .team-box p{
+  font-size: 20px;
+  line-height: 1.8;
+  color:rgb(18 16 93);
+  
+   }
+   .team-box:hover{
+  
+    box-shadow: 0 10px 15px black;
+    transform: scale(1.03);
+   }
+   .team-card:hover{
+  
+    box-shadow: 0 10px 15px black;
+    transform: scale(1.03);
+  
+   }
+  
+   
+  .team-alert{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+  
+  .team-off{
+  padding: 10px 60px ;
+  border-radius: 4px;
+  outline:none;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+  background-color:#1c526b;
+  display: flex;
+  margin: auto;
+  color: wheat;
+  }
+  .team-off:hover{
+    background-color:gray;
+    
+  }
+  .team-popup{
+  width:400px ;
+  border-radius: 6px;
+  position: absolute;
+  top: 330%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  background:white;
+  visibility: hidden;
+  transition:transform 0.4s,top 0.4s;
+  }
+  .team-open-popup{
+  visibility:visible;
+  top: 340%;
+  transform: translate(-50%,-50%) scale(1);
+  }
+  .team-popup img{
+    width: 100px;
+    height: 100px;
+    margin-top: -50px; 
+  } 
+  .team-popup h4{
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px ;
+  }
+  .team-popup button{
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0 ;
+  background:#1c526b;
+  color: white;
+  
+  
+  }
+
+
+</style>
+<body class="team-body">
+    <div>
+        <nav class="navbar">
+            <img src="imgs/logo.png" alt="" class="logo">
+            <form action="">
+            <ul class="lists">
+                <li><a href="./index.html" class="list">Home</a></li>
+                <li><a href="./course.html" class="list">All Courses</a></li>
+                <li><a href="./about.html" class="list">About</a></li>
+                <li><a href="./profs.html" class="list">Team</a></li>
+                <li><a href="./pricing.html" class="list">Pricing</a></li>
+                <li><a href="./cont.html" class="list">Contact Us</a></li>
+                <li><a href="./register.html" class="list">Registered</a></li>
+            
+                <li><a href="./assig.html" class="list">Assignments</a></li>
+                
+                <li><a href="./activities.htm" class="list">Activites</a></li>
+                
+                <li><a href="./rank.htm" class="list">Ranks</a></li>
+              
+                <li><a href="./shop.html" class="list"><img src="imgs/grocery-store.png" alt="" class="carticon" title="shopping cart"></a></li>
+                <li><a href="./certificate.html" class="list2"><button class="listbutton">Get Certificate</button></a></li>
+                <li><button id="button" ><img src="imgs/dark-modeicon.png"  class="darkmode"></button></li>
+             </ul>
+            </form>
+        </nav>
+    </div>
+
+<div class=" team-cont">
+    <h1 class=" team-hh"> WHY OUR TEAM ?</h1>
+<div class="team-box-container">
+<div class=" team-box">
+<img src="imgs/s.png">
+<p class=>
+    "Byte Learn's teaching team is deeply committed
+     to providing a unique educational experience for every
+      student,fostering both academic and personal growth."
+</p> 
+</div>
+<div class="team-box">
+    <img src="imgs/t.png">
+    <p>
+        "With extensive expertise and dedication, Byte Learn's teaching team ensures
+         a rich and inspiring learning journey for all students."
+
+    </p> 
+    </div>
+    <div class=" team-box">
+        <img src="imgs/g.png">
+        <p>
+            "At Byte Learn, our teaching team's passion and experience drive a 
+            dynamic and enjoyable learning environment, motivating students to excel."
+        </p> 
+        </div>
+</div>
+</div>
+   
+                   <h1 class="team-hh"> It is time to meet our dedicated team of educators!</h1>
+
+                    <div class="team-card-container">
+                       
+                        <div class="team-row">
+                        <div class="team-card">
+                            <img src="imgs/AE.jpg.jpg" alt="ahmed essam ">
+                            <div class="team-card-content ">
+                                <h3>Ahmed Essam</h3>
+                                <div class="team-read-more-container">
+                               <div class="team-container">
+                                <p>
+                                    "Ahmed Essam, a passionate math teacher, simplifies complex concepts with
+                                    <span class=" team-read-more-text">
+                                     clarity and enthusiasm, fostering a love for math among students."
+                                    </span>
+                              </p>
+                             <span class="team-read-more-btn">read more...</span>
+                            </div>
+                        </div>
+                                     <a href="./course-content.html" class="team-btn" >let's start</a>
+                            </div>   
+                       </div>
+                        
+                       
+                       <div class="team-card">
+                        <img src="imgs/ma.jpg.jpg" alt="mohamed abdelmaboud  ">
+                        <div class="team-card-content ">
+                            <h3>M.Abdelmaboud</h3>
+
+<div class="team-read-more-container">
+                                <div class="team-container">
+                            <p> "Mohamed Abdelmaboud, a dedicated physics teacher, sparks curiosity and 
+                                  <span class="team-read-more-text">
+                                       understanding through interactive lessons and real-world applications, igniting
+                                       students' interest in the wonders of physics."
+                                  </span>
+                            </p>
+                                      <span class="team-read-more-btn">read more...</span>
+                                    </div>
+                                </div>
+                                    <a href="./course-content.html" class="team-btn" >let's start</a>
+                        </div>   
+                    </div>
+                        
+               <div class="team-card">
+                <img src="imgs/rf.jpg.jpg" alt="reda el farouk ">
+                <div class="team-card-content ">
+                    <h3>Reda El Farouk </h3>
+
+                    <div class="team-read-more-container">
+                        <div class="team-container">
+
+                    <p>"Reda El farouk, an enthusiastic Arabic teacher, inspires students 
+                        with engaging 
+                        <span class="team-read-more-text">
+                        lessons and a friendly approach, making learning Arabic 
+                        enjoyable and enriching."
+                    </span>
+                    </p>
+
+                    <span class="team-read-more-btn">read more...</span>
+                        </div>
+                        </div>
+                         <a href="./course-content.html" class="team-btn" >let's start</a>
+                </div>   
+           </div>
+                        </div>
+        <div class="team-row">
+           <div class="team-card">
+            <img src="imgs/khs.jpg.jpg" alt="khaled sakr ">
+            <div class="team-card-content ">
+                <h3>Khaled Sakr</h3>
+
+                <div class="team-read-more-container">
+                    <div class="team-container">
+                <p>"Khaled sakr, a chemistry teacher, engages students with hands-on
+                    <span class="team-read-more-text">
+                    experiments and captivating
+                     demonstrations, making the world of chemistry come alive in the classroom."
+                    </span>
+                    </p>
+                    <span class="team-read-more-btn">read more...</span>
+                </div>
+                </div>
+                     <a href="./course-content.html" class="team-btn" >let's start </a>
+                    </div>
+            </div>
+
+<div class="team-card">
+        <img src="imgs/EA.jpg.jpg" alt="emad badawy ">
+        <div class="team-card-content ">
+            <h3>Emad Badawy</h3>
+            <div class="team-read-more-container">
+                <div class="team-container">
+            <p>"Emad badawy, a passionate biology teacher, inspires curiosity and critical
+                <span class="team-read-more-text"> thinking 
+                through interactive lessons and captivating discoveries,
+                 nurturing a deep appreciation for the wonders of the natural world among students."
+                </span>
+                </p>
+                <span class="team-read-more-btn">read more...</span>
+            </div>
+            </div>
+                 <a href="./course-content.html" class="team-btn" >let's start </a>
+        </div>   
+   </div>
+   <div class="team-card">
+          <img src="imgs/shm.jpg.jpg" alt="shrief elmassry">
+         <div class="team-card-content ">
+              <h3>Sherif El Massry</h3>
+              <div class="team-read-more-container">
+                <div class="team-container">
+    
+             <p>"Sherif el massry, a creative English teacher, fosters a love for literature 
+              and 
+              <span class="team-read-more-text">
+              language through engaging discussions and innovative teaching methods,
+              empowering students to express themselves with confidence."
+             </span>
+            </p>
+            <span class="team-read-more-btn">read more...</span>
+            </div>
+            </div>
+              <a href="./course-content.html" class="team-btn" >let's start</a>
+           </div>   
+        </div>
+    </div>       
+     </div>  
+
+     <br> <br><br><br><br><br><br><br><br><br><br><br><br>
+     <div class="team-alert">
+      <button type="team-submit"class="team-off" onclick="openPopup()">Special Offer</button>
+
+   <div class="team-popup" id="team-popup">
+  <img src ="imgs/true.png">
+     <h4> Congratulations!!</h4>
+   <p4>This code #1595 will give you a 30% discount on all the courses we offer,Enjoy </p4>
+    <button type="team-button" onclick="closePopup()"> ok</button>
+     </div>
+      </div>
+<br><br><br><br><br><br><br>
+<div class="footer">
+    <footer>
+        <div class="upperfooter">
+            <div class="footer-content">
+                <h3>BYTE-LEARN</h3>
+                <p>The automated process starts as soon as your clothes go into the machine</p>
+
+                <ul>
+                      <li><a href="#explore">Explore</a></li>
+                      <li><a href="#about-us">About Us</a></li>
+                      <li><a href="#services">Services</a></li>
+                      <li><a href="#courses">Courses</a></li>
+                      <li><a href="#blog">Blog</a></li>
+                      <li><a href="#contact-us">Contact Us</a></li>
+                </ul>
+                <ul>
+                      <li><a href="#quick-links">Quick Links</a></li>
+                      <li><a href="#contact-us">Contact Us</a></li>
+                      <li><a href="#pricing">Pricing</a></li>
+                      <li><a href="#terms-and-conditions">Terms & Conditions</a></li>
+                      <li><a href="#privacy">Privacy</a></li>
+                      <li><a href="#feedbacks">Feedbacks</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Have a question?</h3>
+                <p>Call us on <a href="#">+099999999</a></p>
+                <p>Send us on Email: <a href="mailto:itprojectteam7@gmail.com" >itprojectteam7@gmail.com</a></p>
+                <div class="icons">
+                  <a href="#"><img src="imgs/fbicon.jpeg" alt=""></a>
+                  <a href="#"><img src="imgs/igicon.jpeg" alt=""></a>
+                  <a href="#"><img src="imgs/linkdnicon.jpeg" alt=""></a>
+                  <a href="#"><img src="imgs/twittericon.jpeg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright &#169; 2024 All rights reserved | This website is made by BYTE-LEARN</p>
+    </footer>
+</div>
+
+     <script>
+
+const parentContainers = document.querySelectorAll('.team-read-more-container');
+parentContainers.forEach(parentContainer => {
+    parentContainer.addEventListener('click', event => {
+        const current = event.target;
+        const isReadMoreBtn = current.classList.contains('team-read-more-btn');
+
+        if (!isReadMoreBtn) return;
+
+        const currentText = current.parentNode.querySelector('.team-read-more-text');
+        currentText.classList.toggle('team-read-more-text--show');
+
+        current.textContent = current.textContent.includes('read more') ? "read less..." : "read more...";
+    });
+});
+var popup = document.getElementById("team-popup");
+function openPopup() { 
+    popup.classList.add("team-open-popup");
+    
+}
+function closePopup() {
+    popup.classList.remove("team-open-popup");
+    
+
+}
+
+
+     </script>
+    </body>
+    </html>

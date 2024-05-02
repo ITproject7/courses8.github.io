@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    
+    <link rel="icon" href="imgs/icon.jpg" type="img/x-icon">
+    <style>
+        img {
+            max-width: 150px; 
+            height: auto; 
+            border-radius: 10px; 
+            margin: 5px; 
+        }
+
+        .center-table {
+            margin: 0 auto;
+        }
+    </style>
+    <link rel="stylesheet" href="main1.css">
+    
+</head>
+<style>
+    .courseimg {
+    max-width: 300px; 
+    height: auto; 
+    border-radius: 10px; 
+    margin: 5px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.courseimg:hover {
+    transform: scale(1.1);
+}
+
+.courseintro {
+    font-size: 50px;
+    padding: 20px;
+    padding-right: 120px;
+    animation: move 2s ease-in-out infinite alternate;
+    text-align: center;
+    margin-top: 20px;
+    color:#fff
+}
+@keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(200px);
+    }
+}
+
+.courseee{
+    background-image: url('imgs/bgcourse.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}  
+
+.coursetablee {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.coursedes {
+    padding: 10px;
+    text-align: center;
+}
+
+.coursetheader{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.courseparag {
+    font-size: 20px;
+    margin: 20px;
+    text-align: justify;
+    color:#aed6ee
+}
+</style>
+<body class="courseee">
+    <div class="body">
+        <div>
+            <nav class="navbar">
+                <img src="imgs/logo.png" alt="" class="logo">
+                <ul class="lists">
+                    <li><a href="./index.html" class="list">Home</a></li>
+                <li><a href="./course.html" class="list">All Courses</a></li>
+                <li><a href="./about.html" class="list">About</a></li>
+                <li><a href="./profs.html" class="list">Team</a></li>
+                <li><a href="./pricing.html" class="list">Pricing</a></li>
+                <li><a href="./cont.html" class="list">Contact Us</a></li>
+                
+                <li><a href="./register.html" class="list">Registered courses</a></li>
+                <li><a href="./rank.htm" class="list">Ranks</a></li>
+                
+                <li><a href="./activities.htm" class="list">Activities</a></li>
+
+
+                <li><a href="./shop.html" class="list"><img src="imgs/grocery-store.png" alt="" class="carticon" title="shopping cart"></a></li>
+                <li><a href="./certificate.html" class="list2"><button class="listbutton">Get Certificate</button></a></li>
+                
+                <li><button id="button" ><img src="imgs/dark-modeicon.png"  class="darkmode"></button></li>
+             </ul>
+                    
+                
+                
+            </nav>
+        </div>
+        <h3 class="courseintro">Explore topics &amp; skills</h3>
+    <table class="coursetablee">
+            <tr>
+                <th class="coursetheader">Maths</th>
+                <td class="coursedes">
+                    <a href="./course-content.html"><img class="courseimg" src="/imgs/maths-r.png" alt="Maths image"onclick=" showMessage('Maths')"></a>
+                </td>
+                <th class="coursetheader">English</th>
+                <td class="coursedes">
+                    <a href="./course-content.html"><img class="courseimg" src="imgs/englishh.png" alt="English image"onclick=" showMessage('English')"></a>
+                </td>
+                <th class="coursetheader">Physics</th>
+                <td class="coursedes">
+                    <a href="./course-content.html"><img class="courseimg" src="/imgs/physics-r.jpg" alt="Physics image"onclick=" showMessage('Physics')"></a>
+                </td>
+            </tr>
+            <tr>
+                <th class="coursetheader">Arabic</th>
+                <td class="coursedes">
+                    <a href="./course-content.html"><img class="courseimg" src="imgs/arabic.jpg" alt="Arabic image"onclick=" showMessage('Arabic')"></a>
+                </td>
+                <th class="coursetheader">Chemistry</th>
+                <td class="coursedes">
+                    <a href="./course-content.html"><img class="courseimg" src="imgs/chemistry.jpg" alt="Chemistry image" onclick="showMessage('Chemistry')"></a>
+                </td>
+                <th class="coursetheader">Biology</th>
+                <td class="coursedes">
+                    <a href="./course-content.html"><img class="courseimg" src="imgs/biology-r.jpg" alt="Biology image" onclick="showMessage('Biology')"></a>
+                </td>
+            </tr>
+        </table>
+        <p class="courseparag">The adventure begins now, and the possibilities are limitless. Seize them with courage and conviction, for your education is not just a destination but a lifelong odyssey of empowerment and enlightenment.</p>
+        <div class="footer">
+            <footer>
+                <div class="upperfooter">
+                    <div class="footer-content">
+                        <h3>BYTE-LEARN</h3>
+                        <p>The automated process starts as soon as your clothes go into the machine</p>
+                        <ul>
+                            <li><a href="#explore">Explore</a></li>
+                            <li><a href="#about-us">About Us</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#courses">Courses</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact-us">Contact Us</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#quick-links">Quick Links</a></li>
+                            <li><a href="#contact-us">Contact Us</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#terms-and-conditions">Terms & Conditions</a></li>
+                            <li><a href="#privacy">Privacy</a></li>
+                            <li><a href="#feedbacks">Feedbacks</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Have a question?</h3>
+                        <p>Call us on <a href="#">+099999999</a></p>
+                        <p>Send us an Email: <a href="mailto:itprojectteam7@gmail.com" >itprojectteam7@gmail.com</a></p>
+                        <div class="icons">
+                            <a href="#"><img src="imgs/fbicon.jpeg" alt=""></a>
+                            <a href="#"><img src="imgs/igicon.jpeg" alt=""></a>
+                            <a href="#"><img src="imgs/linkdnicon.jpeg" alt=""></a>
+                            <a href="#"><img src="imgs/twittericon.jpeg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright &#169; 2024 All rights reserved | This website is made by BYTE-LEARN</p>
+            </footer>
+        </div>
+    </div>
+    <script>
+        function showMessage(Maths) {
+            alert("You clicked on the " + Maths + " course.");
+        }
+        function showMessage(English) {
+            alert("You clicked on the " + English + " course.");
+        } function showMessage(Physics) {
+            alert("You clicked on the " + Physics + " course.");
+        } function showMessage(Arabic) {
+            alert("You clicked on the " + Arabic + " course.");
+        } function showMessage(Chemistry) {
+            alert("You clicked on the " + Chemistry + " course.");
+        } function showMessage(Biology) {
+            alert("You clicked on the " + Biology + " course.");
+        }
+    </script>
+</body>
+</html>

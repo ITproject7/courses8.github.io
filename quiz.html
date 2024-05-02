@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main1.css">
+    <link rel="icon" type="image/x-icon" href="imgs/icon1.png">
+    <link rel="icon" type="image/x-icon" href="../images/logo-removebg-preview.png">
+    <title>Quiz</title>
+</head>
+<style>
+    .quizol {
+    font-size: 25px;
+    color: white;
+    margin: 40px;
+}
+.quizli{
+    height: 150px;
+    width: 600px;
+}
+.quiz-body {
+    background-color: rgb(57 65 71);
+}
+.quiz-submit {
+    border-radius: 30px;
+    width: 130px;
+    height: 50px;
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 100px;
+    border-style: none;
+}
+.quiz-submit:hover {
+    background-color: rgb(78, 109, 136);
+    color: white;
+    transition: 1s;
+    border-style: none;
+    cursor: pointer;
+    width: 150px;
+    margin-left: -10px;
+}
+.quiz-input:hover {
+    cursor: pointer;
+}
+.quiz-label {
+    color: white;
+    font-size: 25px;
+}
+
+
+</style>
+
+<body class="quiz-body">
+    <div>
+        <nav class="navbar">
+            <img src="imgs/logo.png" alt="" class="logo">
+            <ul class="lists">
+                <li><a href="./index.html" class="list">Home</a></li>
+                <li><a href="./course.html" class="list">All Courses</a></li>
+                <li><a href="./about.html" class="list">About</a></li>
+                <li><a href="./profs.html" class="list">Team</a></li>
+                <li><a href="./pricing.html" class="list">Pricing</a></li>
+                <li><a href="./cont.html" class="list">Contact Us</a></li>
+                <li><a href="./register.html" class="list">Registered</a></li>
+            
+                <li><a href="./assig.html" class="list">Assignments</a></li>
+                
+                <li><a href="./activities.htm" class="list">Activites</a></li>
+                
+                <li><a href="./rank.htm" class="list">Ranks</a></li>
+              
+                <li><a href="./shop.html" class="list"><img src="imgs/grocery-store.png" alt="" class="carticon" title="shopping cart"></a></li>
+                <li><a href="./certificate.html" class="list2"><button class="listbutton">Get Certificate</button></a></li>
+                
+                <li><button id="button" ><img src="imgs/dark-modeicon.png"  class="darkmode"></button></li>
+            </ul>
+                
+            
+            
+        </nav>
+    </div>
+        <ol class="quizol">
+            <li class="quizli">
+                <p>..... is the space around the element </p>
+                <input type="radio" class="quiz-input" name="quiz1" value="margin">
+                <label for="" class="quiz-labels"> Margin </label><br>
+                <input type="radio" class="quiz-input" name="quiz1" value="padding">
+                <label for="" class="quiz-labels"> Padding </label><br>
+                <input type="radio" class="quiz-input" name="quiz1" value="border">
+                <label for="" class="quiz-labels"> Border </label><br>
+            </li>
+            <li class="quizli">
+                <p>..... is to remove the line under link </p>
+                <input type="radio" class="quiz-input" name="quiz2" value="none">
+                <label for="" class="quiz-labels"> Text-decoration: none;</label> <br>
+                <input type="radio" class="quiz-input" name="quiz2" value="linethrough">
+                <label for="" class="quiz-labels"> Text-decoration: line-through;</label><br>
+                <input type="radio" class="quiz-input" name="quiz2" value="over-line"> 
+                <label for="" class="quiz-labels">Text-decoration: over-line;</label><br> <br>
+            </li>
+            <li class="quizli">
+                <p>..... is to reverse a row by flex</p>
+                <input type="radio" class="quiz-input" name="quiz3" value="row">
+                <label for="" class="quiz-labels"> Row</label> <br>
+                <input type="radio" class="quiz-input" name="quiz3" value="column">
+                <label for="" class="quiz-labels"> Column</label> <br>
+                <input type="radio" class="quiz-input" name="quiz3" value="rowrev"> 
+                <label for="" class="quiz-labels">Row-reverse</label> <br><br>
+            </li>
+            <li class="quizli">
+                <p>..... is a vertical distribution</p>
+                <input type="radio" class="quiz-input" name="quiz4" value="aitems">
+                <label for="" class="quiz-labels"> Align items</label> <br>
+                <input type="radio" class="quiz-input" name="quiz4" value="acontent">
+                <label for="" class="quiz-labels"> Align content</label> <br>
+                <input type="radio" class="quiz-input" name="quiz4" value="jcontent">
+                <label for="" class="quiz-labels"> Justify content</label> <br><br>
+            </li>
+            <li class="quizli">
+                <p>..... is a horizontal distribution</p>
+                <input type="radio" class="quiz-input" name="quiz5" value="aitems">
+                <label for="" class="quiz-labels"> Align items</label> <br>
+                <input type="radio" class="quiz-input" name="quiz5" value="acontent">
+                <label for="" class="quiz-labels"> Align content</label> <br>
+                <input type="radio" class="quiz-input" name="quiz5" value="jcontent">
+                <label for="" class="quiz-labels"> Justify content</label> <br><br>
+                
+            </li>
+            <a href="./certificate.html"><input type="submit" class="quiz-submit"></a>
+        </ol> 
+        <div class="footer">
+            <footer>
+                <div class="upperfooter">
+                    <div class="footer-content">
+                        <h3>BYTE-LEARN</h3>
+                        <p>The automated process starts as soon as your clothes go into the machine</p>
+                        
+                        <ul>
+                              <li><a href="#explore">Explore</a></li>
+                              <li><a href="#about-us">About Us</a></li>
+                              <li><a href="#services">Services</a></li>
+                              <li><a href="#courses">Courses</a></li>
+                              <li><a href="#blog">Blog</a></li>
+                              <li><a href="#contact-us">Contact Us</a></li>
+                        </ul>
+                        <ul>
+                              <li><a href="#quick-links">Quick Links</a></li>
+                              <li><a href="#contact-us">Contact Us</a></li>
+                              <li><a href="#pricing">Pricing</a></li>
+                              <li><a href="#terms-and-conditions">Terms & Conditions</a></li>
+                              <li><a href="#privacy">Privacy</a></li>
+                              <li><a href="#feedbacks">Feedbacks</a></li>
+                        </ul>
+                        
+                        
+                      
+                    </div>
+                    
+                    <div class="footer-contact">
+                        <h3>Have a question?</h3>
+                        <p>Call us on <a href="#">+099999999</a></p>
+                        <p>Send us on Email: <a href="mailto:itprojectteam7@gmail.com" >itprojectteam7@gmail.com</a></p>
+                        <div class="icons">
+                          <a href="#"><img src="imgs/fbicon.jpeg" alt=""></a>
+                          <a href="#"><img src="imgs/igicon.jpeg" alt=""></a>
+                          <a href="#"><img src="imgs/linkdnicon.jpeg" alt=""></a>
+                          <a href="#"><img src="imgs/twittericon.jpeg" alt=""></a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <hr>
+                <p class="copyright">Copyright &#169; 2024 All rights reserved | This website is made by BYTE-LEARN</p>
+            </footer>
+        </div>  
+</body>
+</html>

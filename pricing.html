@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="icon" href="imgs/icon.jpg" type="img/x-icon">
+    <link rel="stylesheet" href="main1.css">
+</head>
+
+ <style>
+    body {
+        padding: 0;
+        background:linear-gradient(80deg,#1c526b,#fff,#006ca5);
+        background-size: cover;
+        background-position: center;
+        font-family: Arial, sans-serif;
+        }
+      .Pricing_Main {
+        padding: 20px;
+      }
+      
+      .pricing_plans {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      
+      .Pricing_plan {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 45px;
+        margin: 60px;
+        width: 225px;
+        height: 400px;
+        text-align: center;
+        position: relative;
+    
+    }
+    
+    .Pricing_plan img {
+        width: 178px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+      
+      .plan h2 {
+        color: #333;
+      }
+      
+      .price {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      
+      .plan ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      .plan ul li {
+        margin-bottom: 10px;
+      }
+      
+      .plan button {
+        background-color: #006ca5;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .plan button:hover {
+        background-color: #005083;
+      }
+      
+    
+      .Pricing_font{
+        font-style: italic;
+        position: relative;
+        color: black;
+        font-size: 15px;
+        line-height: 1.3;
+        display: inline-block;
+      }
+      button {
+        background-color: #1c526b;
+        color: white; 
+        border: none; 
+        padding: 10px 20px; 
+        border-radius: 5px; 
+        cursor: pointer; 
+        width:80px ;
+        height: 45px;
+        transition: background-color 0.3s ease; 
+    }
+    
+      .Pricing_title_font{
+        text-align: center;
+        font-size: 28px;
+        margin-top: 2px;
+        margin-bottom: 5px;
+        color: rgb(18 16 93);
+        text-shadow: 0 5px 10px silver;
+      }
+      h2{
+        color: rgb(18 16 93);
+        text-shadow: 0 5px 10px silver;
+      }
+      button:hover {
+        transform: scale(1.1);
+    }
+    .Pricing_plan2 {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px; 
+        margin: 20px 0px; 
+        width: 225px;
+        height: 400px;
+        text-align: center;
+        position: relative;
+    }
+    
+    .Pricing_plan2 h2 {
+        color: rgb(18 16 93);
+        font-size: 24px; 
+        margin-bottom: 10px; 
+    }
+    
+    .Pricing_plan2 .Pricing_font {
+        font-style: italic;
+        position: relative;
+        color: black;
+        font-size: 14px; 
+        line-height: 1.3; 
+        display: inline-block;
+    }
+    
+    .Pricing_plan2 button {
+        background-color: #1c526b;
+        color: white; 
+        border: none; 
+        padding: 10px 20px; 
+        border-radius: 5px; 
+        cursor: pointer; 
+        width:80px ;
+        height: 45px;
+        transition: background-color 0.3s ease; 
+    }
+    
+    .Pricing_plan2 img {
+        width: 178px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .pricing_plans {
+        animation: fadeIn 0.5s ease forwards;
+        opacity: 0;
+    }
+    .Pricing_plan:hover {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      transform: scale(1.03);
+    }
+    .input{
+    padding: 0px;
+    margin-left: 730px;
+    }
+    .input label{
+      color: #fff;
+    }
+    </style>
+    <body>
+
+        <div class="body">
+            <div>
+                <nav class="navbar">
+                    <img src="imgs/logo.png" alt="" class="logo">
+                    <ul class="lists">
+                        <li><a href="./index.html" class="list">Home</a></li>
+                        <li><a href="./course.html" class="list">All Courses</a></li>
+                        <li><a href="./about.html" class="list">About</a></li>
+                        <li><a href="./profs.html" class="list">Team</a></li>
+                        <li><a href="./pricing.html" class="list">Pricing</a></li>
+                        <li><a href="./cont.html" class="list">Contact Us</a></li>
+                        <li><a href="./register.html" class="list">Registered</a></li>
+            
+                        <li><a href="./assig.html" class="list">Assignments</a></li>
+                        
+                        <li><a href="./activities.htm" class="list">Activites</a></li>
+                        
+                        <li><a href="./rank.htm" class="list">Ranks</a></li>
+                      
+                        <li><a href="./shop.html" class="list"><img src="imgs/grocery-store.png" alt="" class="carticon" title="shopping cart"></a></li>
+                        <li><a href="./certificate.html" class="list2"><button class="listbutton">Get Certificate</button></a></li>
+                        <li><button id="button" ><img src="imgs/dark-modeicon.png"  class="darkmode"></button></li>
+                    </ul>
+                        
+                    
+                    
+                </nav>
+            </div>
+            <div class="Pricing_Main">
+                <section class="pricing_plans">
+                  <div class="Pricing_plan">
+                    <img src="imgs/reda.png" alt="reda">
+                    <h2>Reda El Farouk</h2>
+                    <Div class="Pricing_font">
+                    <ul>
+                      <li>Lectures: 0</li>
+                      <li>Packages: 0</li>
+                      <li>price/lecture: 70 EGP.</li>
+                    </ul>
+                    </Div>
+                    <div class="Pricing_btn">
+                    <a href="./pay.html"><button>Select</button></a>
+                    </div>
+                  </div>
+              
+                  <div class="Pricing_plan">
+                    <img src="imgs/abdelmaboud.jpg" alt="abdelmaboud">
+                    <h2>M.Abdelmaboud</h2>
+                    <div class="Pricing_font">
+                    <ul>
+                        <li>Lectures: 0</li>
+                        <li>Packages: 0</li>
+                        <li>price/lecture: 120EGP.</li>
+                    </ul>
+                    </div>
+                    <div class="Pricing_btn">
+                    <a href="./pay.html"><button>Select</button></a>
+                    </div>
+                  </div>
+              
+                  <div class="Pricing_plan">
+                    <img src="imgs/ahmed ess.png" alt="ahmed ess">
+                    <h2>Ahmed Essam</h2>
+                    <div class="Pricing_font">
+                    <ul>
+                        <li>Lectures: 0</li>
+                        <li>Packages: 0</li>
+                        <li>price/lecture: 90EGP.</li>
+                    </ul>
+                    </div>
+                    <div class="Pricing_btn">
+                    <a href="./pay.html"><button>Select</button></a>
+                    </div>
+                  </div>
+              
+                  <div class="Pricing_plan">
+                    <img src="imgs/emad.jpg" alt="emad">
+                    <h2>Emad Badawy</h2>
+                    <div class="Pricing_font">
+                        <ul>
+                            <li>Lectures: 0</li>
+                            <li>Packages: 0</li>
+                            <li>price/lecture: 110EGP.</li>
+                        </ul>
+                    </div>
+                    <div class="Pricing_btn">
+                        <a href="./pay.html"><button>Select</button></a>
+                        </div>
+                  </div>
+              
+                  <div class="Pricing_plan">
+                    <img src="imgs/sherif.jpg" alt="sherif">
+                    <h2>Sherif El Massry</h2>
+                    <div class="Pricing_font">
+                        <ul>
+                            <li>Lectures: 0</li>
+                            <li>Packages: 0</li>
+                            <li>price/lecture: 100EGP.</li>
+                        </ul>
+                    </div>
+                    <div class="Pricing_btn">
+                        <a href="./pay.html"><button>Select</button></a>
+                        </div>
+                  </div>
+              
+                  <div class="Pricing_plan">
+                    <img src="imgs/sakr.jpg" alt="sakr">
+                    <h2>Khaled Sakr</h2>
+                        <div class="Pricing_font">
+                            <ul>
+                                <li>Lectures: 0</li>
+                                <li>Packages: 0</li>
+                                <li>price/lecture: 105EGP.</li>
+                            </ul>
+                        </div>
+                        <div class="Pricing_btn">
+                            <a href="./pay.html"><button>Select</button></a>
+                            </div>
+                      </div>
+                  </div>
+                  <div class="input">
+                    <label>Discount Code:</label>
+                    <input type="text" class="pricing_discount" name="discount">
+                    <button id="applyDiscount">Apply</button>
+                  </div>
+                </section>
+            </div>
+            <div class="footer">
+                <footer>
+                    <div class="upperfooter">
+                        <div class="footer-content">
+                            <h3>BYTE-LEARN</h3>
+                            <p>The automated process starts as soon as your clothes go into the machine</p>
+                            
+                            <ul>
+                                  <li><a href="#explore">Explore</a></li>
+                                  <li><a href="#about-us">About Us</a></li>
+                                  <li><a href="#services">Services</a></li>
+                                  <li><a href="#courses">Courses</a></li>
+                                  <li><a href="#blog">Blog</a></li>
+                                  <li><a href="#contact-us">Contact Us</a></li>
+                            </ul>
+                            <ul>
+                                  <li><a href="#quick-links">Quick Links</a></li>
+                                  <li><a href="#contact-us">Contact Us</a></li>
+                                  <li><a href="#pricing">Pricing</a></li>
+                                  <li><a href="#terms-and-conditions">Terms & Conditions</a></li>
+                                  <li><a href="#privacy">Privacy</a></li>
+                                  <li><a href="#feedbacks">Feedbacks</a></li>
+                            </ul>
+                            
+                            
+                          
+                        </div>
+                        <div class="footer-contact">
+                            <h3>Have a question?</h3>
+                            <p>Call us on <a href="#">+099999999</a></p>
+                            <p>Send us on Email: <a href="mailto:itprojectteam7@gmail.com" >itprojectteam7@gmail.com</a></p>
+                            <div class="icons">
+                              <a href="#"><img src="imgs/fbicon.jpeg" alt=""></a>
+                              <a href="#"><img src="imgs/igicon.jpeg" alt=""></a>
+                              <a href="#"><img src="imgs/linkdnicon.jpeg" alt=""></a>
+                              <a href="#"><img src="imgs/twittericon.jpeg" alt=""></a>
+                            </div>
+                            <p id="demo"></p>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                    <p class="copyright">Copyright &#169; 2024 All rights reserved | This website is made by BYTE-LEARN</p>
+                </footer>
+            </div>
+            
+</body>
+</html>

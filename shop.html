@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Cart</title>
+
+<link rel="icon" type="image/x-icon" href="imgs/icon1.png">
+<link rel="stylesheet" href="main1.css">
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-image: url("/imgs/bg-h.jpeg");
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+
+
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.products, .cart {
+    display: flex;
+    width: 48%;
+    height: auto;
+    background-color: #cacaca65;
+    border: 1px solid #9292927c;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+li img {
+    margin-right: 10px;
+}
+
+
+.Cart-text {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    font-weight: 800;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.407);
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+
+.cart {
+    width: 48%;
+    border: 1px solid #9292927c;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+
+
+.total-price-container {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 50px;
+    border-top: 1px solid #aaaaaa;
+}
+
+
+button {
+    margin: 0 5px;
+}
+
+
+.checkout-button-container {
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+.Checkout-Btn {
+    display: inline-block;
+    padding: 12px 30px;
+    margin-top: 10px;
+    background-image: linear-gradient(to right, #4CAF50, #45a049);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.Checkout-Btn:hover, .Checkout-Btn:focus {
+    background-image: linear-gradient(to right, #45a049, #3e8c43);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+
+.Checkout-Btn:active {
+    background-image: linear-gradient(to right, #3e8c43, #367a3b);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+}
+
+
+
+
+.products ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+.product-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+
+.product-image img {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+
+.product-details {
+    flex-grow: 1;
+}
+
+
+.product-quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+
+.minus-button,
+.plus-button {
+    padding: 5px 10px;
+    margin: 0;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.quantity-input {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    margin: 0 5px;
+    border: 1px solid #9292927c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.product-price p {
+    margin: 0;
+    padding: 0 10px;
+}
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(bg.jpg);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+
+
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.products, .cart {
+    display: flex;
+    width: 48%;
+    height: auto;
+    background-color: #cacaca65;
+    border: 1px solid #9292927c;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+li img {
+    margin-right: 10px;
+}
+
+
+.Cart-text {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    font-weight: 800;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.407);
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+
+.cart {
+    width: 48%;
+    border: 1px solid #9292927c;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+
+
+.total-price-container {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 50px;
+    border-top: 1px solid #aaaaaa;
+}
+
+
+button {
+    margin: 0 5px;
+}
+
+
+.checkout-button-container {
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+.Checkout-Btn {
+    display: inline-block;
+    padding: 12px 30px;
+    margin-top: 10px;
+    background-image: linear-gradient(to right, #4CAF50, #45a049);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.Checkout-Btn:hover, .Checkout-Btn:focus {
+    background-image: linear-gradient(to right, #45a049, #3e8c43);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+
+.Checkout-Btn:active {
+    background-image: linear-gradient(to right, #3e8c43, #367a3b);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+}
+
+
+
+
+.products ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+.product-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+
+.product-image img {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+
+.product-details {
+    flex-grow: 1;
+}
+
+
+.product-quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+
+.minus-button,
+.plus-button {
+    padding: 5px 10px;
+    margin: 0;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.quantity-input {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    margin: 0 5px;
+    border: 1px solid #9292927c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.product-price p {
+    margin: 0;
+    padding: 0 10px;
+}
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+    <div>
+        <nav class="navbar">
+            <img src="imgs/logo.png" alt="" class="logo">
+            <ul class="lists">
+                <li><a href="./index.html" class="list">Home</a></li>
+                <li><a href="./course.html" class="list">All Courses</a></li>
+                <li><a href="./about.html" class="list">About</a></li>
+                <li><a href="./profs.html" class="list">Team</a></li>
+                <li><a href="./pricing.html" class="list">Pricing</a></li>
+                <li><a href="./cont.html" class="list">Contact Us</a></li>
+                <li><a href="./register.html" class="list">Registered</a></li>
+            
+                <li><a href="./assig.html" class="list">Assignments</a></li>
+                
+                <li><a href="./activities.htm" class="list">Activites</a></li>
+                
+                <li><a href="./rank.htm" class="list">Ranks</a></li>
+              
+                <li><a href="./shop.html" class="list"><img src="imgs/grocery-store.png" alt="" class="carticon" title="shopping cart"></a></li>
+                <li><a href="./certificate.html" class="list2"><button class="listbutton">Get Certificate</button></a></li>
+                
+                <li><button id="button" ><img src="imgs/dark-modeicon.png"  class="darkmode"></button></li>
+            </ul>
+                
+            
+            
+        </nav>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+        <div style="position: absolute; width: 100%; height: 100%; background-image: url('/imgs/bg-h.jpeg'); background-size: cover; opacity: 0.5;"></div>
+    </div>
+    <div class="container">
+        <div class="products">
+            <ul id="product-list">
+            </ul>
+        </div>
+        <div class="cart">
+            <h3 class="Cart-text">Your Cart</h3>
+            <div id="cart-details">
+            </div>
+            <p class="total-price-container">Total: EGP
+                <strong id="total-price">0</strong>
+            </p>
+            <div class="checkout-button-container">
+                <a href="pay.html" class="Checkout-Btn">Checkout</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>
+            <div class="upperfooter">
+                <div class="footer-content">
+                    <h3>BYTE-LEARN</h3>
+                    <p>The automated process starts as soon as your clothes go into the machine</p>
+                    
+                    <ul>
+                          <li><a href="#explore">Explore</a></li>
+                          <li><a href="#about-us">About Us</a></li>
+                          <li><a href="#services">Services</a></li>
+                          <li><a href="#courses">Courses</a></li>
+                          <li><a href="#blog">Blog</a></li>
+                          <li><a href="#contact-us">Contact Us</a></li>
+                    </ul>
+                    <ul>
+                          <li><a href="#quick-links">Quick Links</a></li>
+                          <li><a href="#contact-us">Contact Us</a></li>
+                          <li><a href="#pricing">Pricing</a></li>
+                          <li><a href="#terms-and-conditions">Terms & Conditions</a></li>
+                          <li><a href="#privacy">Privacy</a></li>
+                          <li><a href="#feedbacks">Feedbacks</a></li>
+                    </ul>
+                    
+                    
+                  
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Have a question?</h3>
+                    <p>Call us on <a href="#">+099999999</a></p>
+                    <p>Send us on Email: <a href="mailto:itprojectteam7@gmail.com" >itprojectteam7@gmail.com</a></p>
+                    <div class="icons">
+                      <a href="#"><img src="imgs/fbicon.jpeg" alt=""></a>
+                      <a href="#"><img src="imgs/igicon.jpeg" alt=""></a>
+                      <a href="#"><img src="imgs/linkdnicon.jpeg" alt=""></a>
+                      <a href="#"><img src="imgs/twittericon.jpeg" alt=""></a>
+                    </div>
+                </div>
+                
+            </div>
+            <hr>
+            <p class="copyright">Copyright &#169; 2024 All rights reserved | This website is made by BYTE-LEARN</p>
+        </footer>
+    </div>
+    <!-- <script src="java.js"></script> -->
+
+
+
+
+   
+    <script>
+        const products = [
+    { id: 1, name: "Ahmed Essam's Course", price: 300, img: "imgs/math-h.jpeg" },
+    { id: 2, name: "M.Abdelmaboud's Course", price: 350, img: "imgs/physics-h.jpeg" },
+    { id: 3, name: "Reda El Farouk's Course", price: 450, img: "imgs/arabi-h.jpeg" },
+    { id: 4, name: "Khaled Sakr's Course", price: 420, img: "imgs/chem-h.jpeg" },
+    { id: 5, name: "Emad Badawy's Course", price: 500, img: "imgs/biology-h.jpg" },
+    { id: 6, name: "Sherif El Massry's Course", price: 370, img: "imgs/english-h.jpeg" }
+];
+
+
+let cart = {};
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const productList = document.getElementById('product-list');
+
+
+    function generateProductList() {
+        products.forEach(product => {
+            const li = document.createElement('li');
+            li.classList.add("product-item");
+            li.setAttribute('data-product-id', product.id);
+            li.innerHTML = `
+                <div class="product-image">
+                    <img src="${product.img}" alt="${product.name}">
+                </div>
+                <div class="product-details">
+                    <p class="product-title">${product.name}</p>
+                    <p class="product-description"></p>
+                </div>
+                <div class="product-quantity-controls">
+                    <button class="minus-button" data-product-id="${product.id}">-</button>
+                    <input type="text" value="0" readonly class="quantity-input">
+                    <button class="plus-button" data-product-id="${product.id}">+</button>
+                </div>
+                <div class="product-price">
+                    <p>EGP ${product.price.toFixed(2)}</p>
+                </div>
+            `;
+            productList.appendChild(li);
+        });
+    }
+
+
+    function updateQuantityDisplay(productId, quantity) {
+        const productItem = productList.querySelector(`.product-item[data-product-id="${productId}"]`);
+        if (productItem) {
+            const quantityElement = productItem.querySelector('.quantity-input');
+            quantityElement.value = quantity;
+        }
+    }
+
+
+    function updateItemInCart(productId, change) {
+        if (!cart[productId]) {
+            cart[productId] = { ...products.find(p => p.id === productId), quantity: 0 };
+        }
+
+
+        cart[productId].quantity += change;
+
+
+        if (cart[productId].quantity < 0) {
+            cart[productId].quantity = 0;
+        }
+
+
+        updateQuantityDisplay(productId, cart[productId].quantity);
+        updateCart();
+    }
+
+
+    function updateCart() {
+        let totalPrice = 0;
+        const cartDetails = document.getElementById('cart-details');
+        cartDetails.innerHTML = '';
+
+
+        Object.values(cart).forEach(item => {
+            totalPrice += item.quantity * item.price;
+
+
+            if (item.quantity > 0) {
+                const itemElement = document.createElement('div');
+                itemElement.classList.add("cart-item");
+                itemElement.textContent = `${item.quantity} x ${item.name} (EGP ${(item.price * item.quantity).toFixed(2)})`;
+                cartDetails.appendChild(itemElement);
+            }
+        });
+
+
+        document.getElementById('total-price').textContent = totalPrice.toFixed(2);
+    }
+
+
+    productList.addEventListener('click', function(event) {
+        if (event.target.matches('.minus-button')) {
+            const productId = Number(event.target.dataset.productId);
+            updateItemInCart(productId, -1);
+        } else if (event.target.matches('.plus-button')) {
+            const productId = Number(event.target.dataset.productId);
+            updateItemInCart(productId, 1);
+        }
+    });
+
+
+    generateProductList();
+});
+
+
+
+
+    </script>
+   
+</body>
+</html>
+

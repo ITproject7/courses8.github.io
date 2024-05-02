@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course-Content-Teacher_Ahmed_Essam</title>
+    
+    <link rel="icon" href="imgs/icon.jpg" type="img/x-icon">
+    <link rel="stylesheet" href="main1.css">
+    
+</head>
+<style>
+  /* start of course content css */
+.course_title{
+  text-align: center;
+  color: aliceblue;
+}
+.line{
+  width: 150px;
+  height: 3px;
+  background-color: aliceblue;
+  margin: auto;
+  border-radius: 4px;
+}
+.lesson-content{
+    height: 0;
+    visibility: hidden;
+}
+a{
+    text-decoration: none;
+}
+.course-content-lessons:hover{
+    height: 100px;
+    .lesson-content{
+        visibility: visible;
+        height: 50px;
+        
+    }
+}
+.lesson-content ul{
+  margin-top: 40px;
+
+}
+.course-content-lessons{
+    height: 50px;
+    width: 300px;
+    background-color: #1c526b;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    position: relative;
+}
+.lesson-content a{
+    color: rgb(221, 239, 255);
+}
+.Teacher_Ahmed-body{
+    background-image: url(../imgs/R.jpeg);
+    background-size: cover;
+}
+.course-content-lessonName{
+    color: #fff;
+    font-size: large;
+    margin-top: 30px;
+    position: absolute;
+    top: -20px;
+    left: 50px;
+}
+
+a:hover{
+    font-weight: bold;
+    color: whitesmoke;
+    text-align: right;
+}
+.lesson-content li{
+    list-style-position: inside;
+    margin-left: 10px;
+}
+.lesson-content li::marker{
+    color: #fff;
+}
+.course-content-quizes{
+    height: 400px;
+    width: 50px;
+    background-image: url("../imgs/OIP\ \(1\).jpeg");
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    left: 30vw;
+    bottom: 420px;
+}
+.quiz-name{
+    font-size: 30px;
+    color: rgb(232, 232, 232);
+    text-align: center;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+
+
+}
+.container{
+    margin-left: 40vw;
+}
+.Teacher_Abdelmamoud-body{
+  background-image: url(../imgs/202564.jpg);
+  background-size: cover;
+}
+.Teacher_Emad-body{
+  background-image: url(../imgs/OIP\ \(1\).jpeg);
+}
+</style>
+<body class="Teacher_Ahmed-body">
+    
+  <div>
+    <nav class="navbar">
+        <img src="imgs/logo.png" alt="" class="logo">
+        <ul class="lists">
+          <li><a href="./index.html" class="list">Home</a></li>
+          <li><a href="./course.html" class="list">All Courses</a></li>
+          <li><a href="./about.html" class="list">About</a></li>
+          <li><a href="./profs.html" class="list">Team</a></li>
+          <li><a href="./pricing.html" class="list">Pricing</a></li>
+          <li><a href="./cont.html" class="list">Contact Us</a></li>
+          
+          <li><a href="./register.html" class="list">Registered courses</a></li>
+          <li><a href="./rank.htm" class="list">Ranks</a></li>
+          
+          <li><a href="./activities.htm" class="list">Activities</a></li>
+
+
+          <li><a href="./shop.html" class="list"><img src="imgs/grocery-store.png" alt="" class="carticon" title="shopping cart"></a></li>
+          <li><a href="./certificate.html" class="list2"><button class="listbutton">Get Certificate</button></a></li>
+          
+          <li><button id="button" ><img src="imgs/dark-modeicon.png"  class="darkmode"></button></li>
+         </ul>
+            
+        
+        
+    </nav>
+</div>
+    <!-- ////////////////////////// End of nav bar /////////////////////////////////// -->
+
+
+  <!-- ///////////////////////////////// Teacher 1's Page //////////////////////////////////// -->
+  <div class="course-name-container">
+
+    <h1 class="course_title">Mr Ahmed Essam's Course</h1> 
+    <div class="line"></div><br><br>
+
+  </div>
+  <div class="container">
+
+    <div class="course-content-lessons l1">
+
+        <p class="course-content-lessonName">Lesson One: Lesson name</p><br>
+        <div class="lesson-content">
+    
+            <ul>
+                <li><a href="#" class="c-ca">Lesson One video</a></li>
+                <li><a href="./assig.html" class="c-ca">Assignment One</a></li>
+            </ul>
+        </div>
+      </div>
+      <div class="course-content-lessons l2">
+    
+        <p class="course-content-lessonName">Lesson Two: Lesson name</p><br>
+        <div class="lesson-content">
+    
+            <ul>
+                <li><a href="#" class="c-ca">Lesson Two video</a></li>
+                <li><a href="./assig.html" class="c-ca">Assignment Two</a></li>
+                
+    
+            </ul>
+        </div>
+      </div>
+      <div class="course-content-lessons l3">
+    
+        <p class="course-content-lessonName">Lesson Three: Lesson name</p><br>
+        <div class="lesson-content">
+    
+            <ul>
+                
+                <li><a href="#" class="c-ca">Lesson Three video</a></li>
+                <li><a href="./assig.html" class="c-ca">Assignment Three</a></li>
+              
+            </ul>
+    
+        </div>
+      </div>
+      <div class="course-content-lessons l4">
+    
+        <p class="course-content-lessonName">Lesson Four: Lesson name</p><br>
+        <div class="lesson-content">
+            <ul>
+    
+                
+            <li><a href="#" class="c-ca">Lesson Four video</a></li>
+            <li><a href="./assig.html" class="c-ca">Assignment Four</a></li>
+            
+    
+            </ul>
+    
+        </div>
+      </div>
+      <div class="course-content-lessons l5">
+    
+        <p class="course-content-lessonName">Lesson Five: Lesson name</p><br>
+        <div class="lesson-content">
+    
+            <ul>
+                <li><a href="#"class="c-ca">Lesson Five video</a></li>
+                <li><a href="./assig.html" class="c-ca">Assignment Five</a></li>
+               
+            </ul>
+        </div>
+      </div>
+      <div class="course-content-lessons l6">
+    
+        <p class="course-content-lessonName">Lesson Six: Lesson name</p><br>
+        <div class="lesson-content">
+    
+           <ul>
+            <li><a href="#" class="c-ca">Lesson Six video</a></li>
+            <li><a href="./assig.html" class="c-ca">Assignment Six</a></li>
+            
+    
+           </ul>
+        </div>
+      </div>
+      <div class="course-content-lessons l7">
+    
+        <p class="course-content-lessonName">Lesson Seven: Lesson name</p><br>
+        <div class="lesson-content">
+    
+            <ul>
+                <li><a href="#" class="c-ca">Lesson Seven video</a></li>
+                <li><a href="./assig.html" class="c-ca">Assignment Seven</a></li>
+                
+            </ul>
+            
+        </div>
+      </div>
+      
+
+  </div>
+  <div class="course-content-quizes">
+    
+    <a href="./task.html" class="quiz-name"><br>Q<br>u<br>i<br>z<br>e<br>s</a>
+  </div>
+  <script>
+    var message = "Don't forget to take your assigned quiz after finishing your lesson!"
+    alert(message);
+  </script>
+
+  <br><br><br><br><br><br><br>
+         <div class="footer">
+            <footer>
+                <div class="upperfooter">
+                    <div class="footer-content">
+                        <h3>BYTE-LEARN</h3>
+                        <p class="blabla-footer">The automated process starts as soon as your clothes go into the machine</p>
+    
+                        <ul>
+                              <li><a href="#explore">Explore</a></li>
+                              <li><a href="#about-us">About Us</a></li>
+                              <li><a href="#services">Services</a></li>
+                              <li><a href="#courses">Courses</a></li>
+                              <li><a href="#blog">Blog</a></li>
+                              <li><a href="#contact-us">Contact Us</a></li>
+                        </ul>
+                        <ul>
+                              <li><a href="#quick-links">Quick Links</a></li>
+                              <li><a href="#contact-us">Contact Us</a></li>
+                              <li><a href="#pricing">Pricing</a></li>
+                              <li><a href="#terms-and-conditions">Terms & Conditions</a></li>
+                              <li><a href="#privacy">Privacy</a></li>
+                              <li><a href="#feedbacks">Feedbacks</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Have a question?</h3>
+                        <p>Call us on <a href="#">+099999999</a></p>
+                        <p>Send us on Email: <a href="mailto:itprojectteam7@gmail.com" >itprojectteam7@gmail.com</a></p>
+                        <div class="icons">
+                          <a href="#"><img src="imgs/fbicon.jpeg" alt=""></a>
+                          <a href="#"><img src="imgs/igicon.jpeg" alt=""></a>
+                          <a href="#"><img src="imgs/linkdnicon.jpeg" alt=""></a>
+                          <a href="#"><img src="imgs/twittericon.jpeg" alt=""></a>
+                        </div>
+                    </div>
+    
+    </div>
+                <hr>
+                <p class="copyright">Copyright &#169; 2024 All rights reserved | This website is made by BYTE-LEARN</p>
+            </footer>
+        </div>
+  <script src="javascript/course-content.js"></script>
+</body>
+</html>

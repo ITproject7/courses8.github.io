@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    
+    <link rel="icon" href="imgs/icon.jpg" type="img/x-icon">
+    <link rel="stylesheet" href="main1.css">
+    <script>
+        function showMessage() {
+          alert("Thank you for reaching us.");
+        }
+      </script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    .contthemain {
+    background-image: url('imgs/bgcontact.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.contselectall {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #e1f1f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contheader {
+    text-align: center;
+}
+
+.contmyform {
+    margin-top: 20px;
+}
+
+.conttexta,
+.contbutt {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.conttexta {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 95%;
+}
+
+.contbutt {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contbutt:hover {
+    background-color: #0056b3;
+}
+.conticon {
+    padding-left: 40px; 
+    background-image: url('imgs/contactti.png'); 
+    background-size: 20px; 
+    background-repeat: no-repeat;
+    background-position: 10px center; 
+    border: 1px solid #ccc; 
+}
+.contmail {
+    padding-left: 40px;
+    background-image: url('imgs/mail\ logo.png'); 
+    background-size: 20px; 
+    background-repeat: no-repeat;
+    background-position: 10px center; 
+    border: 1px solid #ccc; 
+}
+</style>
+<body class="contthemain">
+    <div class="body">
+        <div>
+            <nav class="navbar">
+                <img src="imgs/logo.png" alt="" class="logo">
+                <ul class="lists">
+                    <li><a href="./index.html" class="list">Home</a></li>
+                    <li><a href="./course.html" class="list">All Courses</a></li>
+                    <li><a href="./about.html" class="list">About</a></li>
+                    <li><a href="./profs.html" class="list">Team</a></li>
+                    <li><a href="./pricing.html" class="list">Pricing</a></li>
+                    <li><a href="./cont.html" class="list">Contact Us</a></li>
+                    
+                    <li><a href="./register.html" class="list">Registered courses</a></li>
+                    <li><a href="./rank.htm" class="list">Ranks</a></li>
+                    
+                    <li><a href="./activities.htm" class="list">Activities</a></li>
+    
+    
+                    <li><a href="./shop.html" class="list"><img src="imgs/grocery-store.png" alt="" class="carticon" title="shopping cart"></a></li>
+                    <li><a href="./certificate.html" class="list2"><button class="listbutton">Get Certificate</button></a></li>
+                    
+                    <li><button id="button" ><img src="imgs/dark-modeicon.png"  class="darkmode"></button></li>
+                   </ul>
+                    
+                
+                
+            </nav>
+        </div>
+    <div class="contselectall">
+        <h1 class="contheader">Contact Us</h1>
+        <form class="contmyform" action="submit_contact_form.php" method="POST">
+            <input type="text" id="name" name="name" placeholder="Full Name" class="conticon"required>
+
+            <input type="email" id="email" name="email" placeholder="Email" class="contmail"required>
+
+            <textarea class="conttexta" id="message" name="message" placeholder="Message"></textarea>
+
+            <button class="contbutt" type="submit" onclick="showMessage()">Submit</button>
+        </form>
+    </div>
+    <div class="footer">
+        <footer>
+            <div class="upperfooter">
+                <div class="footer-content">
+                    <h3>BYTE-LEARN</h3>
+                    <p>The automated process starts as soon as your clothes go into the machine</p>
+                    
+                    <ul>
+                          <li><a href="#explore">Explore</a></li>
+                          <li><a href="#about-us">About Us</a></li>
+                          <li><a href="#services">Services</a></li>
+                          <li><a href="#courses">Courses</a></li>
+                          <li><a href="#blog">Blog</a></li>
+                          <li><a href="#contact-us">Contact Us</a></li>
+                    </ul>
+                    <ul>
+                          <li><a href="#quick-links">Quick Links</a></li>
+                          <li><a href="#contact-us">Contact Us</a></li>
+                          <li><a href="#pricing">Pricing</a></li>
+                          <li><a href="#terms-and-conditions">Terms & Conditions</a></li>
+                          <li><a href="#privacy">Privacy</a></li>
+                          <li><a href="#feedbacks">Feedbacks</a></li>
+                    </ul>
+                    
+                    
+                  
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Have a question?</h3>
+                    <p>Call us on <a href="#">+099999999</a></p>
+                    <p>Send us on Email: <a href="mailto:itprojectteam7@gmail.com" >itprojectteam7@gmail.com</a></p>
+                    <div class="icons">
+                      <a href="#"><img src="imgs/fbicon.jpeg" alt=""></a>
+                      <a href="#"><img src="imgs/igicon.jpeg" alt=""></a>
+                      <a href="#"><img src="imgs/linkdnicon.jpeg" alt=""></a>
+                      <a href="#"><img src="imgs/twittericon.jpeg" alt=""></a>
+                    </div>
+                </div>
+                
+            </div>
+            <hr>
+            <p class="copyright">Copyright &#169; 2024 All rights reserved | This website is made by BYTE-LEARN</p>
+        </footer>
+    </div>
+</body>
+</html>

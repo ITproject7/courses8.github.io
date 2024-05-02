@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign Up page</title>
+    <link rel="icon" type="image/x-icon" href="imgs/icon1.png">
+    <link rel="stylesheet" href="main1.css">
+	
+</head>
+<style>
+  .signbackground{
+    background-image: url('/imgs/loginbg.jpg');
+    background-size: cover;
+    padding-bottom:100px ;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+  
+.signform{
+    animation: moveDown 0.5s ease-in-out forwards;
+    position: relative;
+	padding: 8px;
+	border-radius: 2%;
+	margin-top: -30px; 
+    margin-left: 36%;
+    margin-bottom: 60px;
+    margin-right: 10px;
+	height: 535px;
+	width: 320px;
+	
+    background-color: rgba(28, 82, 107, 0.7);
+    
+    box-shadow:  0 6px 10px 0 rgba(0, 0, 0, 0.274), 0 10px 20px 0 rgba(0, 0, 0, 0.274);
+
+}
+.signform:hover{
+    animation-name: moveDown;
+}
+@keyframes moveDown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(40px); }
+}
+
+.signsignup{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	
+	border-color: transparent;
+}
+
+
+
+.signinputs{
+	height: 30px;
+	width: 270px;
+	border-radius: 6px;
+	border-color: lightslategray;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.274), 0 10px 20px 0 rgba(0, 0, 0, 0.274);
+}
+#signsubbutton{
+    height: 38px;
+    width: 270px; 
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 10px 20px;  
+    margin-top: 20px;
+    background-color: #006ca5;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.274), 0 10px 20px 0 rgba(0, 0, 0, 0.274);
+    transition: 0.4s;
+}
+
+#signsubbutton:hover{
+    background-color: grey;
+    cursor: pointer;
+    transform: scale(0.9,0.9);
+}
+
+.signsign{
+    text-align: center;
+    font-size: 21px;
+	font-weight: 900;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color:whitesmoke;
+   
+    
+
+}
+.signreg{
+    font-size: 16px;
+    font-weight: 600;
+    color: whitesmoke;
+    margin-left: 40px;
+
+}
+.signreglink{
+   
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+.signreglink:hover{
+    color: rgb(18 16 93);
+
+
+}
+.signfb{
+    
+    height: 38px;
+    width: 270px;   
+    margin-left:25px ;
+    margin-top: -10px;
+    background-color: #033855;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.274), 0 10px 20px 0 rgba(0, 0, 0, 0.274);
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    transition: 0.4s;
+
+}
+.signfb:hover{
+    background-color: grey;
+    cursor: pointer;
+    transform: scale(0.9,0.9);
+}
+
+.signor{
+    margin-top: -7px;
+    text-align: center;
+}
+.signgoogle{
+    height: 38px;
+    width: 270px;   
+    margin-left:25px ;
+    margin-top: 15px;
+    background-color:whitesmoke;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.274), 0 10px 20px 0 rgba(0, 0, 0, 0.274);
+    
+    color: #033855;
+    font-weight: bold;
+    transition: 0.4s;
+}
+.signgoogle:hover{
+    background-color: grey;
+    cursor: pointer;
+    transform: scale(0.9,0.9);
+
+}
+.signiconform{
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+</style>
+
+<body>
+	<div class="signbackground">
+		<div>
+            <nav class="navbar">
+                <img src="imgs/logo.png" alt="" class="logo">
+                <ul class="lists">
+                    <li><a href="./index.html" class="list">Home</a></li>
+                    <li><a href="./course.html" class="list">All Courses</a></li>
+                    <li><a href="./about.html" class="list">About</a></li>
+                    <li><a href="./profs.html" class="list">Team</a></li>
+                    <li><a href="./pricing.html" class="list">Pricing</a></li>
+                    <li><a href="./cont.html" class="list">Contact Us</a></li>
+                    <li><a href="./register.html" class="list">Registered</a></li>
+            
+                    <li><a href="./assig.html" class="list">Assignments</a></li>
+                    
+                    <li><a href="./activities.htm" class="list">Activites</a></li>
+                    
+                    <li><a href="./rank.htm" class="list">Ranks</a></li>
+                  
+                    <li><a href="./shop.html" class="list"><img src="imgs/grocery-store.png" alt="" class="carticon" title="shopping cart"></a></li>
+                    <li><a href="./certificate.html" class="list2"><button class="listbutton">Get Certificate</button></a></li>
+                    <li><button id="button" ><img src="imgs/dark-modeicon.png"  class="darkmode"></button></li>
+                </ul>
+                    
+                
+                
+            </nav>
+        </div>
+		<div class="signform">
+			<form action="" id="signsignupForm">
+				<fieldset class="signsignup">
+                    <h2 class="signsign">Sign Up</h2>
+                    
+					<input type="email" name="" id="signemail" placeholder="Enter your email" class="signinputs"  required><br>
+					<input type="password" id="signpassword" placeholder="Create your password" class="signinputs" required><br>
+					<input type="password" id="signconfirmPassword" placeholder="Confirm your password" class="signinputs" required ><br>
+					<input type="date" name="" id="" class="signinputs" required><br>
+					<a href="./course.html"><button type="submit" id="signsubbutton">SignUp</button></a>
+				</fieldset>
+                
+                <p class="signreg">Already have an account? <a href="./reg.html" class="signreglink">Login</a></p>
+                
+                <hr>
+                <p class="signor">Or</p>
+                <div>
+                    
+                    <a href="https://www.facebook.com/" class="signfba"><button type="button" class="signfb" ><img  src="imgs/facebook.png" alt="" class="signiconform">Login with Facebook</button></a>
+                    
+                    <a href="https://www.google.com/" class="signgooglea"><button type="button" class="signgoogle" ><img src="imgs/google.png" alt="" class="signiconform">Login with Google</button></a>
+
+                </div>
+
+
+			</form>
+            
+		</div>
+        
+       
+        
+    
+	</div>
+	<hr>
+	<div class="footer">
+        <footer>
+            <div class="upperfooter">
+                <div class="footer-content">
+                    <h3>BYTE-LEARN</h3>
+                    <p>The automated process starts as soon as your clothes go into the machine</p>
+                    
+                    <ul>
+                          <li><a href="#explore">Explore</a></li>
+                          <li><a href="#about-us">About Us</a></li>
+                          <li><a href="#services">Services</a></li>
+                          <li><a href="#courses">Courses</a></li>
+                          <li><a href="#blog">Blog</a></li>
+                          <li><a href="#contact-us">Contact Us</a></li>
+                    </ul>
+                    <ul>
+                          <li><a href="#quick-links">Quick Links</a></li>
+                          <li><a href="#contact-us">Contact Us</a></li>
+                          <li><a href="#pricing">Pricing</a></li>
+                          <li><a href="#terms-and-conditions">Terms & Conditions</a></li>
+                          <li><a href="#privacy">Privacy</a></li>
+                          <li><a href="#feedbacks">Feedbacks</a></li>
+                    </ul>
+                    
+                    
+                  
+                </div>
+                <div class="footer-contact">
+                    <h3>Have a question?</h3>
+                    <p>Call us on <a href="#">+099999999</a></p>
+                    <p>Send us on Email: <a href="mailto:itprojectteam7@gmail.com" >itprojectteam7@gmail.com</a></p>
+                    <div class="icons">
+                      <a href="#"><img src="imgs/fbicon.jpeg" alt=""></a>
+                      <a href="#"><img src="imgs/igicon.jpeg" alt=""></a>
+                      <a href="#"><img src="imgs/linkdnicon.jpeg" alt=""></a>
+                      <a href="#"><img src="imgs/twittericon.jpeg" alt=""></a>
+                    </div>
+                    <p id="demo"></p>
+                </div>
+                
+            </div>
+            <hr>
+            <p class="copyright">Copyright &#169; 2024 All rights reserved | This website is made by BYTE-LEARN</p>
+        </footer>
+    </div>
+ <script >
+    const signUpButton = document.getElementById('signsubbutton');
+signUpButton.addEventListener('click', validateSignUp);
+
+function validateSignUp() {
+  const password = document.getElementById('signpassword').value;
+  const confirmPassword = document.getElementById('signconfirmPassword').value;
+
+  if (password!== confirmPassword) {
+    alert('Passwords do not match');
+    return;
+  }
+
+  if (password.length < 8) {
+    alert('Password must be at least 8 characters long');
+    return;
+  }
+
+  const hasUppercase = /[A-Z]/.test(password);
+  if (!hasUppercase) {
+    alert('Password must include at least one uppercase letter');
+    return;
+  }
+
+  console.log('Sign up successful!');
+}
+
+
+
+
+document.getElementById("signsignupForm").addEventListener("submit", function() {
+  var email = document.getElementById("signemail").value;
+  var password = document.getElementById("signpassword").value;
+  var expirationDate = new Date();
+  expirationDate.setDate(expirationDate.getDate() + 100); // Set the cookie to expire in 7 days
+  document.cookie = "signemail=" + email + "; expires=" + expirationDate.toUTCString() + "; path=/";
+  document.cookie = "signpassword=" + password + "; expires=" + expirationDate.toUTCString() + "; path=/";
+});
+
+
+var cookies = document.cookie.split("; ");
+for (var i = 0; i < cookies.length; i++) {
+  var cookie = cookies[i].split("=");
+  if (cookie[0] == "signemail") {
+    document.getElementById("signemail").value = cookie[1];
+  } else if (cookie[0] == "signpassword") {
+    document.getElementById("signpassword").value = cookie[1];
+  }
+}
+
+
+document.querySelector(".list2").addEventListener("click", function() {
+  localStorage.setItem("certificate", "true");
+});
+
+
+if (localStorage.getItem("certificate")) {
+  alert("Congratulations, you have earned a certificate!");
+  localStorage.removeItem("certificate"); 
+}
+document.querySelector(".signsign").addEventListener("mouseover", function() {
+  document.querySelector(".signsign").textContent = "Please Sign Up ";
+});
+
+document.querySelector(".signsign").addEventListener("mouseout", function() {
+  document.querySelector(".signsign").textContent = "Sign Up";
+});
+
+
+
+
+
+
+if (!getCookie("cookieAccepted")) {
+  
+  document.getElementById("cookie-message").style.display = "block";
+
+
+  document.getElementById("accept-cookies").addEventListener("click", function() {
+    setCookie("cookieAccepted", "true", 365);
+    document.getElementById("cookie-message").style.display = "none";
+  });
+}
+
+
+function setCookie(name, value, days) {
+  var expires = "";
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime() + (days*24*60*60*1000));
+    expires = "; expires=" + date.toUTCString();
+  }
+  document.cookie = name + "=" + value + expires + "; path=/";
+}
+
+
+function getCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0;i < ca.length;i++) {
+    var c = ca[i];
+    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+  }
+  return null;
+}
+document.getElementById('button').addEventListener('click', function() {
+  var currentStyle = document.getElementById('styleLink').getAttribute('href');
+  
+  if (currentStyle === 'signup.css') {
+      document.getElementById('styleLink').setAttribute('href', 'style2.css');
+  } else {
+      document.getElementById('styleLink').setAttribute('href', 'signup.css');
+  }
+});
+
+
+
+
+
+
+ </script>
+</body>
+</html>
